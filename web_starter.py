@@ -28,7 +28,7 @@ cleanCsv = zip(title,price,subscribers,reviews,reviews_percent,length)
 
 output_file = os.path.join("webFinal.csv")
 
-with open(output_file, "w", newline='') as data_file:
+with open(output_file, "w", newline='\n') as data_file:
     writer = csv.writer(data_file)
     writer.writerow(["Title", "Course Price", "Subscribers", "Reviews", "Percent of Reviews", "Length of Course"])
     writer.writerows(cleanCsv)
